@@ -37,6 +37,7 @@ function multiply(a, b) {
 
   return [myMultiply, myString];
 }
+
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5, 9);
 
