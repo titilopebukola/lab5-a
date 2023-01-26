@@ -57,7 +57,19 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) {
   //eslint-disable-line
+  let sumAB = sum(a, b)[0];
+  let sumABC = multiply(multiplyAB, c)[0];
+
+  let multiplyAB = multiply(a, b)[0];
+  let multiplyABC = multiply(multiplyAB, c)[0];
+
+  let sumString = a + "and" + b + " and " + c + " sum to " + sumABC + ".";
+
+  let multiplyString;
+
+  return [sumABC, multiplyABC, sumString, multiplyString];
 }
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4, 7, 5);
 
