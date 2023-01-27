@@ -32,7 +32,12 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) {
   //eslint-disable-line
+  let myMultiply = a * b;
+  let myString = "The product of " + a + " and" + b + " is " + myMultiply + ".";
+
+  return [myMultiply, myString];
 }
+
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5, 9);
 
@@ -52,7 +57,19 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) {
   //eslint-disable-line
+  let sumAB = sum(a, b)[0];
+  let sumABC = multiply(multiplyAB, c)[0];
+
+  let multiplyAB = multiply(a, b)[0];
+  let multiplyABC = multiply(multiplyAB, c)[0];
+
+  let sumString = a + "and" + b + " and " + c + " sum to " + sumABC + ".";
+
+  let multiplyString;
+
+  return [sumABC, multiplyABC, sumString, multiplyString];
 }
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4, 7, 5);
 
@@ -74,6 +91,7 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) {
   //eslint-disable-line
   let;
+  let mysummArray = [2, 3];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
