@@ -91,6 +91,7 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) {
   //eslint-disable-line
   let;
+  let mysummArray = [2, 3];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
